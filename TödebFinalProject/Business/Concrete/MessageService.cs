@@ -61,7 +61,9 @@ namespace Business.Concrete
             if (!messageDetail.IsRead)
             {
                 messageDetail.IsRead = true;
-                _messageDal.SaveChanges();
+                var message = _messageDal.Get(m => m.Id == id);
+                message.IsRead = true;
+                _messageDal.Update(message);
             }
 
             return new SuccessDataResult<MessageDetailDto>(messageDetail);
