@@ -80,6 +80,14 @@
 
   <br>
   
+  <h3 align="center">Admin Message Detail</h3>
+  
+  ---
+
+  ![](https://github.com/uyilmazz/TODEBFinalProject/blob/main/projectImages/admin-message-detail.PNG?raw=true)
+
+  <br>
+  
   <h3 align="center">Admin Fee Management Page</h3>
   
   ---
