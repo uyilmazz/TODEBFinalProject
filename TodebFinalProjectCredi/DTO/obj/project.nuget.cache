@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wJqM1F0FlgRvX43jUntMOPp7BHruLclepokqEGJ2C9fS68nkvp4HiWN/6XFAFQGa1VgFyv3n0/SsRwK+L9Kxug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TodebFinalProjectCredi\\DTO\\DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Unal\\.nuget\\packages\\mongodb.bson\\2.17.1\\mongodb.bson.2.17.1.nupkg.sha512",
+    "C:\\Users\\Unal\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.deps.json
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\BackgroundJobs.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.AssemblyReference.cache
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.AssemblyInfoInputs.cache
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.AssemblyInfo.cs
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.CoreCompileInputs.cache
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\refint\BackgroundJobs.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\ref\BackgroundJobs.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\Core.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\Dto.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\Core.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\bin\Debug\net5.0\Dto.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\BackgroundJobs\obj\Debug\net5.0\BackgroundJobs.csproj.CopyComplete

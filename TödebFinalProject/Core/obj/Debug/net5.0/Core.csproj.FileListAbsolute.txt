@@ -1,0 +1,15 @@
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\bin\Debug\net5.0\Core.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\refint\Core.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\bin\Debug\net5.0\Dto.dll
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\bin\Debug\net5.0\Dto.pdb
+C:\Users\Unal\Desktop\.net\TödebBootcamp\TödebFinalProject\Core\obj\Debug\net5.0\Core.csproj.CopyComplete

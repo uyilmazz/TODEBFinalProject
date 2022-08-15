@@ -1,0 +1,408 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Business\\Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\BackgroundJobs\\BackgroundJobs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\BackgroundJobs\\BackgroundJobs.csproj",
+        "projectName": "BackgroundJobs",
+        "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\BackgroundJobs\\BackgroundJobs.csproj",
+        "packagesPath": "C:\\Users\\Unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\BackgroundJobs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\Unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\BackgroundJobs\\BackgroundJobs.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\BackgroundJobs\\BackgroundJobs.csproj"
+              },
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj"
+              },
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj"
+              },
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj"
+              },
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj"
+              },
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj",
+        "projectName": "Dto",
+        "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\Dto.csproj",
+        "packagesPath": "C:\\Users\\Unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj",
+        "projectName": "Entity",
+        "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Unal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Unal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Unal\\Desktop\\.net\\TödebBootcamp\\TödebFinalProject\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
