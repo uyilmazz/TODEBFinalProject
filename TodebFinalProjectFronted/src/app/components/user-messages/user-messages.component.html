@@ -1,0 +1,33 @@
+<div *ngIf="messages" class="cont mt-3">
+    <div class="card">
+        <div class="card-header text-center bg-dark bg-gradient text-light">
+            <h3>Messages</h3>
+            ( {{messages.length}} messages listed.)
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table align-middle">
+
+                <thead>
+                    <tr class="bg-warning bg-gradient ">
+                        <th scope="col">User Name</th>
+                        <th scope="col" colspan="3">Content</th>
+                        <th scope="col" class="text-center"></th>
+                        <th scope="col"><button type="button" routerLink="/user/messages/new"
+                                class="btn btn-success float-end px-3">New
+                                Message</button>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let message of messages" routerLink="/messages/detail/{{message.id}}">
+                        <td>{{ (message.userName.length>15)? (message.userName | slice:0:15)+'..':(message.userName ) }}
+                        </td>
+                        <td colspan="3" class="text-left">{{message.content}}</td>
+                        <td class="text-end">{{message.createdDate | date:"medium"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

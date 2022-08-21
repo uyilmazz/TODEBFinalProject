@@ -1,0 +1,70 @@
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+    <div class="position-sticky pt-3 sidebar-sticky">
+        <ul *ngIf="isAdmin()" class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="users">
+                    Users
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="apartments">
+                    Apartments
+                </a>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    Inbox
+                </button>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a [routerLink]="['/messages/type', 'all']"
+                                class="link-dark d-inline-flex text-decoration-none rounded">All
+                                Messages</a>
+                        </li>
+                        <li><a [routerLink]="['/messages/type', 'news']"
+                                class="link-dark d-inline-flex text-decoration-none rounded">News</a></li>
+                        <li><a [routerLink]="['/messages/type', 'unReaded']"
+                                class="link-dark d-inline-flex text-decoration-none rounded">UnReaded</a></li>
+                        <li><a [routerLink]="['/messages/type', 'readed']"
+                                class="link-dark d-inline-flex text-decoration-none rounded">Readed</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="fees">
+                    Fees
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="bills">
+                    Bills
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="payments">
+                    Payments
+                </a>
+            </li>
+        </ul>
+
+        <ul *ngIf="!isAdmin()" class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="user/fees">
+                    Fees
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="user/bills">
+                    Bills
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="user/messages">
+                    Messages
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

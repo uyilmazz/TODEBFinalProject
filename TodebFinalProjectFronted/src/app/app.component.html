@@ -1,0 +1,15 @@
+<div *ngIf="isLogin">
+  <app-nav-bar></app-nav-bar>
+  <div class="container-fluid">
+    <div class="row">
+      <app-side-bar></app-side-bar>
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!isLogin">
+  <app-login></app-login>
+</div>

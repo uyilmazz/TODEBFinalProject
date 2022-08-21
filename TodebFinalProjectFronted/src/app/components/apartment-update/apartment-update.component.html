@@ -1,0 +1,128 @@
+<div *ngIf="apartmentBlocs && apartmentTypes && persons" class="content">
+    <div class="col-md-12 mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Apartment Update</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="apartmentFormGroup">
+
+                    <div class="mb-3">
+                        <label for="id">ID</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" formControlName="id" id="id" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="blocId">Bloc Name</label>
+                        <div class="from-group">
+                            <select id="blocId" class="form-control" formControlName="blocId">
+                                <option *ngFor="let bloc of apartmentBlocs" [ngValue]="bloc.id">
+                                    {{bloc.name}}
+                                </option>
+                            </select>
+                        </div>
+                        <div
+                            *ngIf="apartmentFormGroup.get('blocId')?.invalid && (apartmentFormGroup.get('blocId')?.dirty ||apartmentFormGroup.get('blocId')?.touched)">
+                            <small class=" text-danger" *ngIf="apartmentFormGroup.get('blocId')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="apartmentFormGroup.get('blocId')?.hasError('min')">
+                                Bloc Name must be select.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="typeId">Type Name</label>
+                        <div class="from-group">
+                            <select id="typeId" class="form-control" formControlName="typeId">
+                                <option *ngFor="let type of apartmentTypes" [ngValue]="type.id">
+                                    {{type.name}}
+                                </option>
+                            </select>
+                        </div>
+                        <div
+                            *ngIf="apartmentFormGroup.get('typeId')?.invalid && (apartmentFormGroup.get('typeId')?.dirty ||apartmentFormGroup.get('typeId')?.touched)">
+                            <small class=" text-danger" *ngIf="apartmentFormGroup.get('typeId')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="apartmentFormGroup.get('typeId')?.hasError('min')">
+                                Type Name must be select.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="personId">Person Name</label>
+                        <div class="from-group">
+                            <select id="personId" class="form-control" formControlName="personId">
+                                <option *ngFor="let person of persons" [ngValue]="person.id">
+                                    {{person.firstName + " " + person.lastName}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="floor">Floor</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Floor" formControlName="floor"
+                                id="floor" />
+                        </div>
+                        <div
+                            *ngIf="apartmentFormGroup.get('floor')?.invalid && (apartmentFormGroup.get('floor')?.dirty ||apartmentFormGroup.get('floor')?.touched)">
+                            <small class=" text-danger" *ngIf="apartmentFormGroup.get('floor')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="apartmentNumber">Apartment Number</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Apartment Number"
+                                formControlName="apartmentNumber" id="apartmentNumber" min="0" />
+                        </div>
+                        <div
+                            *ngIf="apartmentFormGroup.get('apartmentNumber')?.invalid &&  (apartmentFormGroup.get('apartmentNumber')?.dirty ||apartmentFormGroup.get('tcNo')?.touched)">
+                            <small class=" text-danger"
+                                *ngIf="apartmentFormGroup.get('apartmentNumber')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger"
+                                *ngIf="apartmentFormGroup.get('apartmentNumber')?.hasError('min')">
+                                Apartment Number must be at least 0.
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="isEmpty">Apartment status</label>
+                        <div class="form-group">
+                            <input type="radio" [value]="true" name="isEmpty" formControlName="isEmpty"
+                                [checked]="true">
+                            Empty
+                            <input type="radio" [value]="false" name="isEmpty" formControlName="isEmpty"> Full
+                        </div>
+
+                        <div
+                            *ngIf="apartmentFormGroup.get('isEmpty')?.invalid && (apartmentFormGroup.get('isEmpty')?.dirty ||apartmentFormGroup.get('isEmpty')?.touched)">
+                            <small class=" text-danger" *ngIf="apartmentFormGroup.get('isEmpty')?.hasError('required')">
+                                This field cannot be empty!
+                            </small>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-fill btn-primary" (click)="updateApartment()">Update
+                    Apartment</button>
+            </div>
+        </div>
+    </div>
+</div>

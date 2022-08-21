@@ -1,0 +1,38 @@
+<div *ngIf="fees" class="cont mt-3">
+    <div class="card">
+        <div class="card-header text-center bg-dark bg-gradient text-light">
+            <h3>Fee Management</h3>
+            ( {{fees.length}} fees listed.)
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr class="bg-warning bg-gradient text-center">
+                        <th scope="col">ID</th>
+                        <th scope="col">Apartment ID</th>
+                        <th scope="col">User Name</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">IsPaid</th>
+                        <th scope="col">Date</th>
+                        <th scope="col"><button type="button" routerLink="/fees/addFee"
+                                class="btn btn-success float-end px-3">New
+                                Fee</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let fee of fees" class="text-center">
+                        <td><strong>{{fee.id}}</strong></td>
+                        <td>{{fee.apartmentId}}</td>
+                        <td>{{fee.personName}}</td>
+                        <td>{{fee.amount}}</td>
+                        <td>{{fee.isPaid}}</td>
+
+                        <td>{{fee.createdDate | date:"medium"}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

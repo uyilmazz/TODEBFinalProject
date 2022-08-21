@@ -1,0 +1,104 @@
+<div class="content">
+    <div class="col-md-12 mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">User add</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="userAddFormGroup">
+                    <div class="mb-3">
+                        <label for="firstName">First Name</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" formControlName="firstName"
+                                id="firstName" minlength="3" />
+                        </div>
+                        <div
+                            *ngIf="userAddFormGroup.get('firstName')?.invalid && (userAddFormGroup.get('firstName')?.dirty ||userAddFormGroup.get('firstName')?.touched)">
+                            <small class=" text-danger" *ngIf="userAddFormGroup.get('firstName')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="userAddFormGroup.get('firstName')?.hasError('minlength')">
+                                First name must be at least 3 characters.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastName">Last Name</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" formControlName="lastName"
+                                id="lastName" minlength="3" />
+                        </div>
+                        <div
+                            *ngIf="userAddFormGroup.get('lastName')?.invalid && (userAddFormGroup.get('lastName')?.dirty ||userAddFormGroup.get('lastName')?.touched)">
+                            <small class=" text-danger" *ngIf="userAddFormGroup.get('lastName')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="userAddFormGroup.get('lastName')?.hasError('minlength')">
+                                Last name must be at least 3 characters.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tcNo">TC No</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="TC No" formControlName="tcNo" id="tcNo"
+                                minlength="11" maxlength="11" />
+                        </div>
+                        <div
+                            *ngIf="userAddFormGroup.get('tcNo')?.invalid &&  (userAddFormGroup.get('tcNo')?.dirty ||userAddFormGroup.get('tcNo')?.touched)">
+                            <small class=" text-danger" *ngIf="userAddFormGroup.get('tcNo')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="userAddFormGroup.get('tcNo')?.hasError('minlength')">
+                                Last name must be at 11 characters.
+                            </small>
+                            <small class="text-danger" *ngIf="userAddFormGroup.get('tcNo')?.hasError('maxlength')">
+                                Last name must be at 11 characters.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email" formControlName="email"
+                                id="email" />
+                        </div>
+                        <div
+                            *ngIf="userAddFormGroup.get('email')?.invalid && (userAddFormGroup.get('email')?.dirty ||userAddFormGroup.get('email')?.touched)">
+                            <small class=" text-danger" *ngIf="userAddFormGroup.get('email')?.hasError('required')">
+                                This field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="userAddFormGroup.get('email')?.hasError('email')">
+                                Value is not correct format.
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="plakaNo">Plaka No</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="plakaNo" formControlName="plakaNo"
+                                id="plakaNo" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phoneNumber">Phone Number</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="phoneNumber"
+                                formControlName="phoneNumber" id="phoneNumber" />
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-fill btn-primary" (click)="addUser()">Add User</button>
+            </div>
+        </div>
+    </div>
+</div>

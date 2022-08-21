@@ -1,0 +1,57 @@
+<div class="content w-50 mx-auto h-100">
+    <div class="col-md-12 mt-4">
+        <div class="card my-auto">
+            <div class="card-header">
+                <h5 class="title">New Message</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="messageForm">
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" formControlName="subject"
+                                id="subject" />
+                        </div>
+                        <div
+                            *ngIf="messageForm.get('subject')?.invalid && (messageForm.get('subject')?.dirty ||messageForm.get('subject')?.touched)">
+                            <small class=" text-danger" *ngIf="messageForm.get('subject')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+                            <small class="text-danger" *ngIf="messageForm.get('subject')?.hasError('minLength')">
+                                Subject must be at least 3 characters.
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="content">Content</label>
+                        <!-- <div class="form-group">
+                            <input type="text" class="form-control" placeholder="content" formControlName="content"
+                                id="content" />
+                        </div> -->
+                        <div class="form-outline">
+                            <textarea class="form-control" placeholder="content" id="content" formControlName="content"
+                                rows="8"></textarea>
+                        </div>
+                        <div
+                            *ngIf="messageForm.get('content')?.invalid && (messageForm.get('content')?.dirty ||messageForm.get('content')?.touched)">
+                            <small class=" text-danger" *ngIf="messageForm.get('content')?.hasError('required')">
+                                this field cannot be empty!
+                            </small>
+
+                            <small class="text-danger" *ngIf="messageForm.get('content')?.hasError('minLength')">
+                                Year must be at least 10 characters.
+                            </small>
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-fill btn-primary" (click)="sendMessage()">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>

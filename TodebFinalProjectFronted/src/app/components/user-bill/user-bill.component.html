@@ -1,0 +1,36 @@
+<div *ngIf="bills" class="cont mt-3">
+    <div class="card">
+        <div class="card-header text-center bg-dark bg-gradient text-light">
+            <h3>Bill Management</h3>
+            ( {{bills.length}} bills listed.)
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr class="bg-warning bg-gradient text-center">
+                        <th scope="col">ID</th>
+                        <th scope="col">Apartment ID</th>
+                        <th scope="col">User Name</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">IsPaid</th>
+                        <th scope="col">Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bill of bills" class="text-center">
+                        <td><strong>{{bill.id}}</strong></td>
+                        <td>{{bill.apartmentId}}</td>
+                        <td>{{bill.personName}}</td>
+                        <td>{{bill.amount}}</td>
+                        <td>{{bill.isPaid}}</td>
+                        <td>{{bill.createdDate | date:"medium"}}</td>
+                        <td>
+                            <button class="btn btn-success" routerLink="/user/bills/payment/{{bill.id}}">Pay</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

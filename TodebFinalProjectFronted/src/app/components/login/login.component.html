@@ -1,0 +1,27 @@
+<body class="text-center account-page">
+    <main class="form-account account-card">
+        <div class="card-body">
+            <div class="logo" style="font-size: 40px;"><span>TODEB </span><span><span>PROJECT</span></span></div>
+            <hr class="solid">
+            <form [formGroup]="loginForm" class="mt-4">
+                <div>
+                    <div class="form-floating mb-2">
+                        <input formControlName="email" type="email" class="form-control" id="signinemail"
+                            placeholder="name@example.com">
+                        <label for="signinemail">E-posta adresi</label>
+                    </div>
+                </div>
+
+                <div class="form-floating">
+                    <input formControlName="password" type="password" class="form-control" id="signinpassword"
+                        placeholder="password">
+                    <label for="signinpassword">Parola</label>
+                </div>
+
+                <button (click)="login()" class="w-100 btn btn-lg mt-3"
+                    style="background-color: var(--firstThemeColor); color: var(--secondThemeColor);"><strong>GİRİŞ
+                        YAP</strong></button>
+            </form>
+        </div>
+    </main>
+</body>

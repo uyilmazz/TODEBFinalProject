@@ -1,0 +1,46 @@
+<div class="content w-50 mx-auto h-100">
+    <div class="col-md-12 mt-4">
+        <div class="card my-auto">
+            <div class="card-header">
+                <h5 class="title">{{message.id}} Message Detail</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="messageForm">
+
+                    <div class="mb-3">
+                        <label for="userName">User Name</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="User Name" formControlName="userName"
+                                id="userName" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="createdDate">Date</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Date" formControlName="createdDate"
+                                id="createdDate" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" formControlName="subject"
+                                id="subject" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="content">Content</label>
+                        <div class="form-outline">
+                            <textarea class="form-control" placeholder="content" id="content" formControlName="content"
+                                rows="8"></textarea>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
